@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+//    self.view.backgroundColor  =[UIColor redColor];
+    
+    UIActivityIndicatorView * aiv = [[UIActivityIndicatorView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [aiv setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    aiv.color = [UIColor grayColor];
+    [self.view addSubview:aiv];
+    
+    [aiv startAnimating];
 }
 
 
